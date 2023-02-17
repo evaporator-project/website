@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Evaporator',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'Evaporator是轻量级的、基于 Web 的 API 开发套件。它是从头开始构建的，考虑到易用性和可访问性，为 API 开发人员提供了极简、不显眼的 UI 所需的所有功能。它是免费使用的，并且作为额外的福利完全开源！',
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -84,15 +84,10 @@ const config = {
         title: 'Evaporator',
         logo: {
           alt: 'Evaporator Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
-          },
+          {to: '/docs/getting-started/introduction', label: 'Doc', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/community/team', label: 'Community', position: 'left'},
           {
@@ -100,7 +95,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/evaporator-project/evaporator',
             label: 'GitHub',
             position: 'right',
           },
@@ -114,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                to: '/docs/getting-started/introduction',
               },
             ],
           },
@@ -144,7 +139,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/evaporator-project/evaporator',
               },
             ],
           },
